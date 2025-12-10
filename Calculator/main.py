@@ -1,16 +1,16 @@
 from art import logo
 
-def perform_operation(first_number, operation, second_number):
+def perform_operation(n1, operation, n2):
     result = 0
     if operation == "+":
-        result =  first_number + second_number
+        result = n1 + n2
     elif operation == "-":
-        result =  first_number - second_number
+        result = n1 - n2
     elif operation == "*":
-        result =  first_number * second_number
+        result = n1 * n2
     elif operation == "/":
-        result =  first_number / second_number
-    print(f"{first_number} {operation} {second_number} = {result}")
+        result = n1 / n2
+    print(f"{n1} {operation} {n2} = {result}")
     return result
 
 def get_number(prompt: str) -> float:
